@@ -50,11 +50,6 @@ def savefig(img, outmask, truemask, path, reconimg):
     grid[3].cax.toggle_label(True)
     grid[3].set_title("Anomaly Map", fontsize=14)
 
-    # threshold = 0.15
-    # outmask=np.where(outmask >= threshold, 1, 0)
-    # grid[4].imshow(outmask)
-    # grid[4].tick_params(labelbottom=False, labelleft=False, bottom=False, left=False)
-    # grid[4].set_title("PredictionTruth", fontsize=14)
 
     plt.savefig(path, bbox_inches="tight")
     plt.close()
