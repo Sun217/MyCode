@@ -10,7 +10,7 @@ def ColorDifference(imgo,imgr):
     RD=diff[:,:,1]
     BD=diff[:,:,2]
     Result=RD+BD
-    Result=cv2.blur(Result,(11,11))*0.0001
+    Result=cv2.blur(Result,(11,11))*0.001
     return Result
 
 if __name__=="__main__":
